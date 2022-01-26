@@ -1,6 +1,6 @@
 package Crypt::Cipher::Vigenere;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use v5.20;
 use strict;
@@ -75,6 +75,10 @@ sub reset ($self) { $self->{pos} = 0 }
 __END__
 
 =pod
+
+=head1 NAME
+
+Crypt::Cipher::Vigenere - implementation of Vigenere cipher
 
 =head1 SYNOPSIS
 
