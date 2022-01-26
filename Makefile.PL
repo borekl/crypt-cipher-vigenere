@@ -30,7 +30,7 @@ my %WriteMakefileArgs = (
 		},
 		provides => {
 			'Crypt::Cipher::Vigenere' => {
-				file => $lib_file',
+				file => $lib_file,
 				version => extract_version(),
 			}
 		}
