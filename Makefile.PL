@@ -18,7 +18,7 @@ my %WriteMakefileArgs = (
     VERSION_FROM     => 'lib/Crypt/Cipher/Vigenere.pm',
     ABSTRACT_FROM    => 'lib/Crypt/Cipher/Vigenere.pm',
     LICENSE          => 'artistic_2',
-    MIN_PERL_VERSION => '5.20',
+    MIN_PERL_VERSION => '5.020',
     META_MERGE       => {
    	'meta-spec' => { version => 2 },
 	dynamic_config => 0,
@@ -28,13 +28,13 @@ my %WriteMakefileArgs = (
 			url => 'https://github.com/borekl/crypt-cipher-vigenere.git',
 			web => 'https://github.com/borekl/crypt-cipher-vigenere'
 		},
-		provides => {
-			'Crypt::Cipher::Vigenere' => {
-				file => $lib_file,
-				version => extract_version(),
-			}
-		}
-	}
+	},
+        provides => {
+                'Crypt::Cipher::Vigenere' => {
+                        file => $lib_file,
+                        version => extract_version(),
+                }
+        }
     },
     CONFIGURE_REQUIRES => {
         'ExtUtils::MakeMaker' => '0',
