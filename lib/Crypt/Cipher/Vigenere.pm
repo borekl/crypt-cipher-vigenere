@@ -90,7 +90,7 @@ Crypt::Cipher::Vigenere - implementation of Vigenere cipher
     my $cipher_text = $vigenere->encode( $plain_text );
 
     # decode ciphertext
-    my $plain_text = $vigenere->decode( $cipher_rtext );
+    my $plain_text = $vigenere->decode( $cipher_text );
 
     # reset internal position in the key
     $vigenere->reset;
